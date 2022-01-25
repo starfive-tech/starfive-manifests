@@ -1,11 +1,29 @@
 # Download Android source with local_manifests
  Refer to http://source.android.com/source/downloading.html
 
- $ repo init -u https://android.googlesource.com/platform/manifest -b android-12.0.0_r15
- $ git clone https://github.com/android-rpi/local_manifests .repo/local_manifests -b arpi-12
+ $ repo init -u https://android.googlesource.com/platform/manifest -b android-12.0.0_r2
+ $ git clone https://github.com/android-risc-v/local_manifests .repo/local_manifests -b arv-12
  $ repo sync
 
-# Build for Raspberry Pi 4
- https://github.com/android-rpi/device_arpi_rpi4
+# Touch rust & clang
+
+ $ cd prebuilts/rust
+ $ git lfs pull
+ $ cd  ../clang/host/linux-x86
+ $ git lfs pull
+ $ cd ../../../..
+ $ mkdir prebuilts/runtime/mainline/runtime/sdk/android/riscv64/include/bionic/libc/kernel/uapi/asm-riscv64
+ $ rm external/angle/Android.bp
+ $ touch packages/modules/ArtPrebuilt/com.android.art-riscv64.apex
+
+# Build Android
+ Continue build referring to http://source.android.com/source/building.html
+
+  $ source build/envsetup.sh
+  $ lunch sdk_phone64_riscv64
+  $ m
+
+# Run Emulator
+  $ emulator -no-qt -show-kernel -noaudio -selinux permissive -qemu -smp 1 -m 3584M -bios kernel/prebuilts/5.10/riscv64/fw_jump.bin
 
 Use -j[n] option on sync & build steps, if build host has a good number of CPU cores.

@@ -2,16 +2,6 @@
 <manifest>
   <remote name="arv" fetch="https://github.com/android-risc-v"/>
 
-  <remove-project name="platform/build"/>
-  <project path="build/make" name="build_make" revision="riscv64-android-12.0.0_dev" remote="arv">
-    <copyfile src="core/root.mk" dest="Makefile" />
-    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-    <linkfile src="core" dest="build/core" />
-    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-    <linkfile src="target" dest="build/target" />
-    <linkfile src="tools" dest="build/tools" />
-  </project>
   <remove-project name="platform/build/bazel"/>
   <project path="build/bazel" name="build_bazel" revision="riscv64-android-12.0.0_dev" remote="arv">
     <linkfile src="bazel.WORKSPACE" dest="WORKSPACE" />
@@ -24,17 +14,10 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   
-  <remove-project name="platform/art"/>
-  <project path="art" name="art" revision="riscv64-android-12.0.0_dev" remote="arv"/>
   <remove-project name="platform/bionic"/>
   <project path="bionic" name="bionic" revision="riscv64-android-12.0.0_dev" remote="arv"/>
   <remove-project name="platform/development"/>
   <project path="development" name="development" revision="riscv64-android-12.0.0_dev" remote="arv"/>
-
-  <remove-project name="device/generic/goldfish"/>
-  <project path="device/generic/goldfish" name="device_generic_goldfish" revision="riscv64-android-12.0.0_dev" remote="arv"/>
-  <remove-project name="device/generic/goldfish-opengl"/>
-  <project path="device/generic/goldfish-opengl" name="device_generic_goldfish-opengl" revision="riscv64-android-12.0.0_dev" remote="arv"/>
 
   <remove-project name="platform/external/aac"/>
   <project path="external/aac" name="external_aac" revision="riscv64-android-12.0.0_dev" remote="arv"/>
@@ -116,8 +99,6 @@
   <project path="system/apex" name="system_apex" revision="riscv64-android-12.0.0_dev" remote="arv"/>
   <remove-project name="platform/system/bt"/>
   <project path="system/bt" name="system_bt" revision="riscv64-android-12.0.0_dev" remote="arv"/>
-  <remove-project name="platform/system/core"/>
-  <project path="system/core" name="system_core" revision="riscv64-android-12.0.0_dev" remote="arv"/>
   <remove-project name="platform/system/extras"/>
   <project path="system/extras" name="system_extras" revision="riscv64-android-12.0.0_dev" remote="arv"/>
   <remove-project name="platform/system/iorap"/>
@@ -160,8 +141,6 @@
   <project path="packages/modules/ArtPrebuilt" name="platform-packages-modules-ArtPrebuilt" revision="riscv64-android-12.0.0_dev" remote="riscv-android" clone-depth="1"/>
   <remove-project name="platform/prebuilts/abi-dumps/vndk"/>
   <project path="prebuilts/abi-dumps/vndk" name="platform-prebuilts-abi-dumps-vndk" revision="riscv64-android-12.0.0_dev" remote="riscv-android" clone-depth="1"/>
-  <remove-project name="platform/prebuilts/android-emulator"/>
-  <project path="prebuilts/android-emulator" name="platform-prebuilts-android-emulator" revision="riscv64-android-12.0.0_dev" remote="riscv-android" clone-depth="1"/>
   <remove-project name="platform/prebuilts/build-tools"/>
   <project path="prebuilts/build-tools" name="platform-prebuilts-build-tools" revision="riscv64-android-12.0.0_dev" remote="riscv-android" clone-depth="1"/>
   <remove-project name="platform/prebuilts/clang/host/linux-x86"/>  
@@ -183,10 +162,28 @@
 
   <project path="prebuilts/gcc/linux-x86/riscv64/riscv64-linux-android-8.1" name="platform-prebuilts-gcc-linux-x86-riscv64-riscv64-linux-android-8.1" revision="riscv64-android-10.0.0_dev" remote="riscv-android" clone-depth="1"/>
 
-  <project path="kernel/prebuilts/5.10/riscv64" name="kernel-prebuilts-5.10-riscv64" revision="riscv64-android-12.0.0_dev" remote="riscv-android" clone-depth="1"/>
 
   <!-- touched by android-risc-v -->
-  <project path="device/thead/thead_ice910" name="device_thead_thead_ice910" revision="arv-10_r11" remote="arv"/>
-  <project path="vendor/arpi/RpLauncher" name="RpLauncher" revision="arpi-12" remote="arv"/>
+  <remove-project name="platform/build"/>
+  <project path="build/make" name="build_make" revision="arv-12" remote="arv">
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
 
+  <remove-project name="platform/art"/>
+  <project path="art" name="art" revision="arv-12" remote="arv"/>
+  <remove-project name="platform/system/core"/>
+  <project path="system/core" name="system_core" revision="arv-12" remote="arv"/>
+
+  <remove-project name="platform/external/swiftshader"/>
+  <project path="external/swiftshader" name="external_swiftshader" revision="arv-12" remote="arv"/>
+  <project path="hardware/arv" name="hardware_arv" revision="arv-12" remote="arv"/>
+  <project path="device/arv/jh7100" name="device_arv_jh7100" revision="arv-12" remote="arv"/>
+
+  <project path="vendor/arpi/RpLauncher" name="RpLauncher" revision="arpi-12" remote="arv"/>
 </manifest>

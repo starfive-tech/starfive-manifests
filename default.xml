@@ -192,6 +192,8 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
 
+  <remove-project name="platform/system/bpf"/>
+  <project path="system/bpf" name="system_bpf" revision="arv-12" remote="arv"/>
   <remove-project name="platform/system/core"/>
   <project path="system/core" name="system_core" revision="arv-12" remote="arv"/>
 

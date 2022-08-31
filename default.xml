@@ -197,8 +197,11 @@
   <remove-project name="platform/system/core"/>
   <project path="system/core" name="system_core" revision="arv-12" remote="arv"/>
 
-  <remove-project name="platform/external/swiftshader"/>
-  <project path="external/swiftshader" name="external_swiftshader" revision="arv-12" remote="arv"/>
+  <remove-project name="platform/external/mesa3d"/>
+  <project path="external/mesa3d" name="external_mesa3d" revision="arv-12" remote="arv"/>
+  <remove-project name="platform/external/libdrm"/>
+  <project path="external/libdrm" name="platform/external/libdrm" revision="android13-release"/>
+  
   <project path="hardware/arv" name="hardware_arv" revision="arv-12" remote="arv"/>
   <project path="device/arv/jh7100" name="device_arv_jh7100" revision="arv-12" remote="arv"/>
 

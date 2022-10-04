@@ -151,8 +151,12 @@
 
   <remove-project name="platform/packages/modules/ArtPrebuilt"/>
   <project path="packages/modules/ArtPrebuilt" name="platform-packages-modules-ArtPrebuilt" revision="riscv64-android-12.0.0_dev" remote="riscv-android" clone-depth="2"/>
+  <remove-project name="platform/prebuilts/abi-dumps/ndk"/>
+  <project path="prebuilts/abi-dumps/ndk" name="platform-prebuilts-abi-dumps-ndk" revision="riscv64-android-12.0.0_dev" remote="riscv-android" clone-depth="2"/>
+  <remove-project name="platform/prebuilts/abi-dumps/platform"/>
+  <project path="prebuilts/abi-dumps/platform" name="platform-prebuilts-abi-dumps-platform" revision="riscv64-android-12.0.0_dev" remote="riscv-android" clone-depth="2"/>
   <remove-project name="platform/prebuilts/abi-dumps/vndk"/>
-  <project path="prebuilts/abi-dumps/vndk" name="platform-prebuilts-abi-dumps-vndk" revision="riscv64-android-12.0.0_dev" remote="riscv-android" clone-depth="1"/>
+  <project path="prebuilts/abi-dumps/vndk" name="platform-prebuilts-abi-dumps-vndk" revision="riscv64-android-12.0.0_dev" remote="riscv-android" clone-depth="2"/>
   <remove-project name="platform/prebuilts/android-emulator"/>
   <project path="prebuilts/android-emulator" name="platform-prebuilts-android-emulator" revision="riscv64-android-12.0.0_dev" remote="riscv-android" clone-depth="1"/>
   <remove-project name="platform/prebuilts/build-tools"/>

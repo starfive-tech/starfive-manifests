@@ -132,8 +132,12 @@
 
   <remove-project name="platform/test/mlts/benchmark"/>
   <project path="test/mlts/benchmark" name="test_mlts_benchmark" revision="riscv64-android-12.0.0_dev" remote="arv"/>
+  <remove-project name="platform/test/vts"/>
+  <project path="test/vts" name="test_vts" revision="riscv64-android-12.0.0_dev" remote="arv"/>
   <remove-project name="platform/test/vts-testcase/hal"/>
   <project path="test/vts-testcase/hal" name="test_vts-testcase_hal" revision="riscv64-android-12.0.0_dev" remote="arv"/>
+  <remove-project name="platform/test/vts-testcase/vndk"/>
+  <project path="test/vts-testcase/vndk" name="test_vts-testcase_vndk" revision="riscv64-android-12.0.0_dev" remote="arv"/>
 
 
   <!-- remove -->

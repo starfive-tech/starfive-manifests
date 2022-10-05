@@ -52,8 +52,6 @@
   <project path="external/linux-kselftest" name="external_linux-kselftest" revision="riscv64-android-12.0.0_dev" remote="arv" clone-depth="2"/>
   <remove-project name="platform/external/llvm"/>
   <project path="external/llvm" name="external_llvm" revision="riscv64-android-12.0.0_dev" remote="arv"/>
-  <remove-project name="platform/external/minijail"/>
-  <project path="external/minijail" name="external_minijail" revision="riscv64-android-12.0.0_dev" remote="arv"/>
   <remove-project name="platform/external/oboe"/>
   <project path="external/oboe" name="external_oboe" revision="riscv64-android-12.0.0_dev" remote="arv"/>
   <remove-project name="platform/external/perfetto"/>
@@ -211,6 +209,8 @@
   <project path="external/mesa3d" name="external_mesa3d" revision="arv-12" remote="arv"/>
   <remove-project name="platform/external/libdrm"/>
   <project path="external/libdrm" name="platform/external/libdrm" revision="android13-release"/>
+  <remove-project name="platform/external/minijail"/>
+  <project path="external/minijail" name="external_minijail" revision="arv-12" remote="arv"/>
   
   <project path="hardware/arv" name="hardware_arv" revision="arv-12" remote="arv"/>
   <project path="device/arv/jh7100" name="device_arv_jh7100" revision="arv-12" remote="arv"/>

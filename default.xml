@@ -182,8 +182,6 @@
 
   <project path="prebuilts/gcc/linux-x86/riscv64/riscv64-linux-android-8.1" name="platform-prebuilts-gcc-linux-x86-riscv64-riscv64-linux-android-8.1" revision="riscv64-android-10.0.0_dev" remote="riscv-android" clone-depth="1"/>
 
-  <project path="kernel/prebuilts/5.10/riscv64" name="kernel-prebuilts-5.10-riscv64" revision="riscv64-android-12.0.0_dev" remote="riscv-android" clone-depth="1"/>
-
 
   <!-- touched by android-risc-v -->
   <remove-project name="platform/art"/>

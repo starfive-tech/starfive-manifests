@@ -6,8 +6,8 @@
   <remove-project name="platform/external/mesa3d"/>
   <project path="external/mesa3d" name="external_mesa3d" revision="arv-master" remote="arv"/>
 
-  <project path="hardware/arv" name="jh7110-hardware" revision="arv-master" remote="starfive"/>
-  <project path="device/arv/jh7110" name="jh7110-visionfive-v2" revision="arv-master" remote="starfive"/>
+  <project path="hardware/arv" name="jh7110-hardware" revision="jh7110-android14-v1.0" remote="starfive"/>
+  <project path="device/arv/jh7110" name="jh7110-visionfive-v2" revision="jh7110-android14-v1.0" remote="starfive"/>
   
   <project path="vendor/arpi/RpLauncher" name="RpLauncher" revision="arpi-master" remote="arv"/>
 </manifest>

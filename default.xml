@@ -3,7 +3,6 @@
   <remote name="arv" fetch="https://github.com/android-risc-v"/>
   <remote name="starfive" fetch="http://192.168.110.45/aosp"/>
 
-  <remove-project name="platform/external/mesa3d"/>
   <project path="external/mesa3d" name="external_mesa3d" revision="arv-master" remote="arv"/>
 
   <project path="hardware/arv" name="jh7110-hardware" revision="arv-master" remote="starfive"/>

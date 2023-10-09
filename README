@@ -1,11 +1,1 @@
-# Download Android source with local_manifests
- Refer to http://source.android.com/source/downloading.html
-
- $ repo init -u https://android.googlesource.com/platform/manifest -b master
- $ git clone https://github.com/android-risc-v/local_manifests .repo/local_manifests -b arv-master
- $ repo sync
-
-# Build for JH7110
-  https://github.com/android-risc-v/device_arv_jh7110
-
-Use -j[n] option on sync & build steps, if build host has a good number of CPU cores.
+Refer to https://github.com/starfive-tech/aosp-manifests for downloading and building for JH7110 Vision Five v2.

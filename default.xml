@@ -5,7 +5,7 @@
 
   <project path="external/mesa3d" name="external_mesa3d" revision="arv-master" remote="arv"/>
 
-  <project path="hardware/arv" name="aosp-hardware" revision="main remote="starfive"/>
+  <project path="hardware/arv" name="aosp-hardware" revision="main" remote="starfive"/>
   <project path="device/arv/jh7110" name="aosp-device" revision="main" remote="starfive"/>
   
   <project path="vendor/arpi/RpLauncher" name="RpLauncher" revision="arpi-master" remote="arv"/>

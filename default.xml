@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="arv" fetch="https://github.com/android-risc-v"/>
-  <remote name="starfive" fetch="http://192.168.110.45/aosp"/>
+  <remote name="starfive" fetch="https://github.com/starfive-tech/"/>
 
   <project path="external/mesa3d" name="external_mesa3d" revision="arv-master" remote="arv"/>
 
-  <project path="hardware/arv" name="jh7110-hardware" revision="arv-master" remote="starfive"/>
-  <project path="device/arv/jh7110" name="jh7110-visionfive-v2" revision="arv-master" remote="starfive"/>
+  <project path="hardware/arv" name="aosp-hardware" revision="main remote="starfive"/>
+  <project path="device/arv/jh7110" name="aosp-device" revision="main" remote="starfive"/>
   
   <project path="vendor/arpi/RpLauncher" name="RpLauncher" revision="arpi-master" remote="arv"/>
 </manifest>
